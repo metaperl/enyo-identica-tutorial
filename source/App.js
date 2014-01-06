@@ -55,7 +55,9 @@ enyo.kind({
 	    {kind: "onyx.Button", content: "Post Tweet", ontap: "postTweet"}
 	]}
     ],
-    helloWorldTap: function(inSender, inEvent) {
-	this.$.main.addContent("The button was tapped.<br/>");
+    reloadTweets: function(inSender, inEvent) {
+        t = new Tweet();
+        t.text = "hoho";
+	this.$.main.addContent(t);
     }
 });
