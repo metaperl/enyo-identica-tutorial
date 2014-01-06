@@ -1,0 +1,20 @@
+* Identical Tutorial
+** Main Window
+general component
+*** MenuBar
+**** Reload Button
+{kind: "onyx.Toolbar", components: [
+    {kind: "onyx.Button", content: "Reload", ontap: "reloadTweets"}
+]}
+
+*** Scrollable Area
+	{kind: "enyo.Scroller", fit: true, components: [
+	    {name: "main", classes: "nice-padding" }
+	]},
+
+*** Text Entry
+	{kind: "onyx.TextArea"
+        },
+
+*** Post Button
+ {kind: "onyx.Button", content: "Post", ontap: "postTweet"}
